@@ -5,19 +5,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-    <title>Pedin</title>
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>Portfólio | Pedro</title>
 </head>
 
 <body>
 
     <header>
-        <p>fala tu</p>
+        <img src="./images/logos/Logo.png" alt="Logo">
+        <div class="links">
+            <ul>
+                <li><a href="#start">Início</a></li>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
-        
+        <section id="start">
+            <div class="start">
+                <p>Eu sou</p>
+                <p>Pedro Henrique</p>
+                <p id="info">Desenvolvedor de Software | Programador Front-End</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about">
+                <p>Sobre Mim</p>
+                <div class="text-img">
+                    <img src="./images/profile.png" alt="Imagem">
+                    <p id="text">Sou um desenvolvedor apaixonado por tecnologia e inovação. Com vasta experiência em
+                        desenvolvimento Front-End, amo criar soluções que impactam positivamente a vida das pessoas e
+                        organizações.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="skills">
+                <p>Habilidades</p>
+                <div class="skills-tools">
+                    <div class="front">
+                        <p id="front">Front-End</p>
+                        <ul>
+                            <li>
+                                <abbr title="HTML5 - Hypertext Markup Language">
+                                    <img src="./images/logos/HTML5.png" alt="HTML5">
+                                </abbr>
+                            </li>
+                            <li>
+                                <abbr title="CSS3 - Cascading Style Sheets">
+                                    <img src="./images/logos/CSS3.png" alt="CSS">
+                                </abbr>
+                            </li>
+                            <li>
+                                <abbr title="JavaScript">
+                                    <img src="./images/logos/JS.png" alt="JavaScript">
+                                </abbr>
+                            </li>
+                            <li>
+                                <abbr title="React">
+                                    <img src="./images/logos/react.png" alt="React">
+                                </abbr>
+                            </li>
+                            <li>
+                                <abbr title="TypeScript">
+                                    <img src="./images/logos/typescript.png" alt="TypeScript">
+                                </abbr>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tools">
+                        <p id="tools">Ferramentas de desenvolvimento</p>
+                        <ul>
+                            <li>
+                                <abbr title="Visual Studio Code">
+                                    <img src="./images/logos/vscode.png" alt="VScode">
+                                </abbr>
+                            </li>
+                            <li>
+                                <abbr title="Figma">
+                                    <img src="./images/logos/figma.png" alt="Figma">
+                                </abbr>
+                            </li>
+                            <li>
+                                <abbr title="Git">
+                                    <img src="./images/logos/git.png" alt="Git">
+                                </abbr>
+                            </li>
+                            <li>
+                                <abbr title="GitHub">
+                                    <img src="./images/logos/logotipo-do-github.png" alt="GitHub">
+                                </abbr>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+
+        </section>
+
+        <section id="contact">
+            <div class="contact">
+                <p>Entre em contato</p>
+                <div class="form">
+                    <form action="">
+                        <div class="nome">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="email">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="message">
+                            <label for="message">Mensagem</label>
+                            <textarea name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <img src="./images/service.png" alt="Imagem atendente">
+            </div>
+        </section>
+
     </main>
 
 </body>

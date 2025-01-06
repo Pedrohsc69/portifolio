@@ -1,13 +1,179 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    
+html{
+    scroll-behavior: smooth;
 }
 
-header #img-profile img{
-    
+body {
+    font-family: "Montserrat", serif;
+    color: #10403B;
+}
+
+header {
+    background: linear-gradient(0deg, #127369, #10403B);
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+    padding: 24px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header .links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    list-style: none;
+}
+header .links a {
+    background-image: linear-gradient(90deg, white, white);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    transition: background-size 300ms ease;
+}
+header .links a:hover{
+    background-size: 100% 2px;
+}
+
+
+main {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 230px;
+    margin: 90px auto;
+
+    border: 1px solid black;
+}
+main .start p {
+    font-size: 120px;
+}
+main .start #info {
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+main .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .about p {
+    font-size: 44px;
+}
+main .about .text-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+main .about .text-img #text {
+    width: 657px;
+    font-size: 24px;
+    text-align: left;
+}
+
+main .skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+main .skills p{
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+main .skills .front ul{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 40px;
+    list-style: none;
+}
+main .skills .front img{
+    width: 64px;
+}
+main .skills .front #front{
+    font-size: 24px;
+}
+main .skills .tools{
+    margin-top: 40px;
+}
+main .skills .tools ul{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 40px;
+    list-style: none;
+
+}
+main .skills .tools img{
+    width: 64px;
+}
+main .skills .tools #tools{
+    font-size: 24px;
+}
+
+main .contact{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 18.9px 8px rgba(0, 0, 0, 0.28);
+}
+main .contact p{
+    font-size: 44px;
+}
+main .contact .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+}
+main .contact .form form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+main .contact .form .nome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+main .contact .form input{
+    padding: 8px;
+}
+main .contact .form .email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+main .contact .form .message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+main .contact img{
+    width: 450px;
+    margin-bottom: -26px;
+    margin-left: 50px;
 }
